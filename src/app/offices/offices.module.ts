@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { OfficesListComponent } from './offices-list.component';
+import { SharedModule } from '../shared';
+import { OfficesRoutingModule } from './offices-routing.module';
+import { OfficesComponent } from './offices.component';
 
 @NgModule({
-  declarations: [
-    OfficesListComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+	declarations: [
+		OfficesComponent
+	],
+	imports: [
+		SharedModule,
+		OfficesRoutingModule
+	]
 })
 export class OfficesModule { }

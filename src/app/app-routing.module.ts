@@ -17,10 +17,10 @@ const routes: Routes = [
   {
     path: 'article',
     loadChildren: './article/article.module#ArticleModule'
-  // },
-  // {
-  //   path: 'offices',
-  //   loadChildren: './offices/offices.module#OfficesModule'
+  },
+  {
+    path: 'offices',
+    loadChildren: './offices/offices.module#OfficesModule'
   }
 ];
 

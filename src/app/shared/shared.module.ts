@@ -8,7 +8,7 @@ import { ArticleListComponent, ArticleMetaComponent, ArticlePreviewComponent } f
 import { FavoriteButtonComponent, FollowButtonComponent } from './buttons';
 import { ListErrorsComponent } from './list-errors.component';
 import { ShowAuthedDirective } from './show-authed.directive';
-import { OfficesListComponent } from '../offices/offices-list.component';
+import { OfficesListComponent } from './offices-helpers/offices-list.component';
 
 @NgModule({
   imports: [

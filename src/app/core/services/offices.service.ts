@@ -14,11 +14,20 @@ export class OfficesService {
 		private apiService: ApiService
 	) {}
 
-	getAll(): Observable<string> {
+	/**
+	 * Get all offices from server
+	 */
+	getAll(): Observable<any> {
 		return this.apiService.get('/offices/')
 		.pipe(map(data => {
-			debugger;
-			return data
+			return data;
+		}));
+	}
+
+	getOne(slug): Observable<any> {
+		return this.apiService.get(`/offices/${slug}`)
+		.pipe(map(data => {
+			return data;
 		}));
 	}
 
