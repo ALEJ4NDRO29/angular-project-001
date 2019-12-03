@@ -7,12 +7,11 @@ import { ActivatedRoute } from '@angular/router';
 	styleUrls: ['./offices.component.css']
 })
 export class OfficesComponent implements OnInit {
+	office: string
 
 	constructor(
 		private route: ActivatedRoute
 	) { }
-
-	office: string
 
 	ngOnInit() {
 		this.route.data.subscribe(

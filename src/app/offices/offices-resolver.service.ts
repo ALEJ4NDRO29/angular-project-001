@@ -20,7 +20,12 @@ export class OfficesResolver implements Resolve<any> {
 		state: RouterStateSnapshot
 	): Observable<any> {
 
-		return this.officesService.getOne(route.params['slug']).pipe(catchError((err) => this.router.navigateByUrl('/')));;
+		return this.officesService
+			.getOne(route.params['slug'])
+			.pipe(
+				catchError((err) => 
+				this.router.navigateByUrl('/')
+			));
 	}
 
 }

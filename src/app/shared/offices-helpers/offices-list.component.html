@@ -1,5 +1,6 @@
 <div *ngFor="let office of offices">
   <p>{{office.id}}</p>
-  <p>{{office.slug}}</p>
+  <p><a [routerLink]="['/offices', office.slug]">{{office.slug}}</a></p>
   <p>{{office.name}}</p>
+  <hr>
 </div>
